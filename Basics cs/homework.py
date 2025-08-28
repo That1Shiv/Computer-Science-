@@ -297,18 +297,65 @@
 # Write a code to unpack the following tuple into four variables and display each variable.
 # Given: tuple1 = (10, 20, 30, 40)
 
+# my_tuple = (1,2,3,4,5)
+# print(my_tuple[2])
+# print(len(my_tuple))
+# print(my_tuple * 3)
+
+# numbers = (1, 2, 3, 4, 5, 6, 7, 8, 9,10,11,12,13)
+# print(numbers[3:7])
+
+# tuple1 = (10, 20, 30, 40, 50)
+# print(tuple1[::-1])    
+
+# tuple2 = (10, 20, 30, 40)
 
 
+# thursday 28th august 2025
 
-my_tuple = (1,2,3,4,5)
-print(my_tuple[2])
-print(len(my_tuple))
-print(my_tuple * 3)
+# write a python function that takes a list of words and return the longest word and the length of the longest one
+def find_longest_word(words):
+    if not words:
+        return None, 
+    longest_word = max(words, key=len)
+    return longest_word, len(longest_word)
+# print(find_longest_word(["a","bb","ccc",]))
 
-numbers = (1, 2, 3, 4, 5, 6, 7, 8, 9,10,11,12,13)
-print(numbers[3:7])
 
-tuple1 = (10, 20, 30, 40, 50)
-print(tuple1[::-1])    
+# write a python program to find the first appearance of the substrings 'not' and 'poor' in a given string. if 'not' follows 'poor', replace the whole 'not'...poor substring with 'good'. return the resulting string 
 
-tuple2 = (10, 20, 30, 40)
+def replace_not_poor(text):
+    words = text.split()
+
+    if "not" in words and "poor" in words: 
+        not_index = words.index("not")
+        poor_index = words.index('poor')
+
+        if not_index < poor_index: 
+            words[not_index:poor_index+1] = ["good"]
+
+    return " ".join(words) 
+# print(replace_not_poor("The food is not that poor"))
+
+# write a python program to get a single string from two given strings, seperated by a space and swap the first two characters of each string 
+ 
+def swap_strings(a,b): 
+    new_a = b[:2] + a[2:]
+    new_b = a[:2] + b[2:]
+    return new_a + " " + new_b
+# print(swap_strings("abc","xyz"))
+
+# write a python function to find the union and intersection fo two lists
+def union_and_intersection(list1, list2):
+    union = list(set(list1) | set(list2))
+    intersection = list(set(list1) & set(list2))
+    return union, intersection
+# print(union_and_intersection([1,2,3,4],[3,4,5,6]))
+
+# write a python program to print a tuple with string formatting
+####### 
+######
+######
+###### 
+
+# write a python program to convert a tuple to a string

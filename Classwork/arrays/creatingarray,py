@@ -1,0 +1,6 @@
+# array is used to store multiple values in a single variable
+# an array can hold many values under one name 
+# values are obtained by index number 
+
+
+laptops = ["macbook", "asus", "hp", "dell"]
